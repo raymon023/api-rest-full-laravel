@@ -27,4 +27,10 @@ class ArticleResource extends JsonResource
             ]
         ];
     }
+
+    public function toResponse($request){
+        return parent::toResponse($request)->withHeaders([
+            'Location' => route('articles.show',$this->resource)
+        ]);
+    }
 }
