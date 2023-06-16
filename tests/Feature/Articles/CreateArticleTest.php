@@ -15,7 +15,7 @@ class CreateArticleTest extends TestCase
      * A basic feature test example.
      */
     public function test_can_create_articles(): void
-    {
+    {   
         $this->withoutExceptionHandling();
         $response =  $this->postJson(route('articles.create'), [
             'data' => [

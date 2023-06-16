@@ -106,5 +106,6 @@ class ValidateJsonApiHeadersTest extends TestCase
             'accept' => 'application/vnd.api+json',
             'content-type' => 'application/vnd.api+json'
         ])->assertHeaderMissing('content-type');
+
     }
 }
