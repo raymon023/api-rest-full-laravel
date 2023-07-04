@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Article extends Model
 {
+    protected $guarded = [];
+
     use HasFactory;
 
     public function user():BelongsTo
